@@ -1,0 +1,8 @@
+<div class="users-page-main">
+	<h1>User Page</h1>
+	<a class="btn btn-primary" ng-click="UsersCtrl.getUser()">Get Users</a>
+	
+	<div ng-repeat="user in UsersCtrl.users">
+		{{user.name}}
+	</div>
+</div>
