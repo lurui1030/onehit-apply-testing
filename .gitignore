@@ -8,8 +8,6 @@ target/
 .project
 .settings
 .springBeans
-node_modules
-src/main/resources/static/bower_components
 
 ### IntelliJ IDEA ###
 .idea
