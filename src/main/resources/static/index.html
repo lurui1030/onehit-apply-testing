@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<link rel="stylesheet" href="./bower_components/bootstrap-css-only/css/bootstrap.min.css" />
+
+<!-- injector:css -->
+<link rel="stylesheet" href="/app/views/users/users.css">
+<!-- endinjector -->
+
+</head>
+<body ng-app="oneHitApply">
+		
+	
+	<a class="btn btn-primary" ui-sref='root.school'>School</a>
+	<a class="btn btn-primary" ui-sref='root.user'>User</a>
+	
+	<div ui-view="content"></div>
+	
+	<script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="./bower_components/angular-resource/angular-resource.min.js"></script>
+	<script type="text/javascript" src="./bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="./bower_components/angular-route/angular-route.min.js"></script>
+
+	<!-- injector:js -->
+	<script src="/app/app.js"></script>
+	<script src="/app/router.js"></script>
+	<script src="/app/views/schools/schools.controller.js"></script>
+	<script src="/app/views/users/users.controller.js"></script>
+	<!-- endinjector -->
+	
+</body>
+</html>
