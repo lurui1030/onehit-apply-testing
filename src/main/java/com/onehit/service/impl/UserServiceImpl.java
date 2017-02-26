@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService{
 		user.setId(2);
 		user.setName("Jiaming Liu");
 		list.add(user);
-		
+
 		//HardCoded user end
 		return list;
 	} 
