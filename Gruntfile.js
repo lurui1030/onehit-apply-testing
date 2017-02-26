@@ -6,7 +6,11 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		watch: {
 			javascript: {
-				files: ['src/main/resources/static/app/*.js', 'src/main/resources/static/app/views/**/*.js'],
+				files: [
+					'src/main/resources/static/app/*.js', 
+					'src/main/resources/static/app/views/**/*.js', 
+					'src/main/resources/static/app/services/*.js'
+					],
 				tasks: ['injector:javascript'],
 			},
 			css: {
@@ -25,7 +29,8 @@ module.exports = function(grunt) {
 				files: {
 					'src/main/resources/static/index.html': [
 						'src/main/resources/static/app/*.js',
-						'src/main/resources/static/app/views/**/*.js'
+						'src/main/resources/static/app/views/**/*.js',
+						'src/main/resources/static/app/services/*.js'
 					],
 				},
 			},
