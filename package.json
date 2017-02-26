@@ -4,6 +4,7 @@
   "description": "Version 0.0.1 Deploy and test on the Github and Heroku",
   "main": "index.js",
   "dependencies": {
+    "bower": "^1.8.0",
     "grunt": "^1.0.1"
   },
   "devDependencies": {
