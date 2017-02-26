@@ -1,17 +1,13 @@
 (function() {
 	class UsersController {
-		constructor($http){
+		constructor(usersService){
 			this.getUser = function(){
-				var url = "http://localhost:8080/users";
-				$http({
-					method: "GET",
-					url: url
-				}).then(res => {
-					this.users = res.data;
-				})
+				usersService.getUsersService().then(res =>{
+					this.users = res;
+				});
 			}
 		}
 	}
-	UsersController.$inject = ['$http'];
+	UsersController.$inject = ['usersService'];
 	angular.module('oneHitApply').controller('UsersController', UsersController);
 })();
