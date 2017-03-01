@@ -20,4 +20,6 @@ public class OnehitController {
 	public List<User> getUsers(){
 		return userService.getUsers();	
 	}
+	
+	
 }
